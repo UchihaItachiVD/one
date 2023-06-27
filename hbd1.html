@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Website</title>
+  <style>
+    /* CSS styles for the falling hearts effect */
+    #heart-container {
+      position: relative;
+      width: 100%;
+      height: 200px; /* Adjust the height as per your preference */
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      top: -50px;
+      font-size: 24px;
+      color: red; /* Adjust the color as per your preference */
+      animation: fall 3s ease-in infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(200px); /* Adjust the height as per your preference */
+      }
+    }
+  </style>
+  <script src="specialeffects.js" defer></script>
+</head>
+<body>
+  <section id="hearts">
+    <h2>I fell for you every day like these hearts are falling on you </h2>
+    <!-- <button id="hearts-button">Create Falling Hearts</button> -->
+    <div id="heart-container"></div>
+  </section>
+  <section>
+    <table>
+        <tr>
+            <td><img src="anchal2.jpg" alt="anchal" width="600px"></td>
+            <td><img src="anchal3.jpg" alt="anchal" width="500px"></td>
+            <td><button style="width: 300px;" ><a href="hbd2.html">Click Here</a></button></td>
+        </tr>
+    </table>
+    
+  </section>
+</body>
+</html>

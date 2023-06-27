@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Website</title>
+  <style>
+    /* CSS styles for amazing particle animation */
+    .particle {
+      position: fixed;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: particleAnimation ease-out infinite;
+      transform-origin: center;
+    }
+
+    @keyframes particleAnimation {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      50% {
+        transform: scale(2);
+        opacity: 0.4;
+      }
+      100% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+
+    /* CSS styles for scrolling message animation */
+    .message-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .message {
+      display: inline-block;
+      font-size: 24px;
+      color: #ffffff;
+      animation: scrollMessage linear infinite;
+    }
+
+    @keyframes scrollMessage {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+  <script src="amazinganimation.js" defer></script>
+  <script src="messages.js" defer></script>
+</head>
+<body>
+  <!-- Your HTML content here -->
+  <div class="message-container">
+    <div class="message" id="message"></div>
+  </div>
+  <section><button style=" color: red;"><a href="hbd3.html">NEXT PAGE</a></button></section>
+</body>
+</html>
